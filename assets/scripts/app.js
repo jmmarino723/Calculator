@@ -3,69 +3,44 @@ let currentResult=defaultResult;
 let historial=[];
 let operacion={};
 
-function calcular(operador){
-    if (operador==='SUMA'){
-        operacion={
-            operando: userInput.value,
-            opera: "SUMA"
-        }
-        alert(operacion.opera+": "+operacion.operando)
-        historial.push("+"+userInput.value);
-        currentResult=currentResult+parseInt(userInput.value);
+function calcular(operacion){
+    switch (operacion){
+        case '+':
+            //historial.push("+"+userInput.value);
+            userInput.value=userInput.value+'+';
+            //currentResult=currentResult+'+';
+            break;
+        case '-':
+            userInput.value=userInput.value+'-';
+            //historial.push("-"+userInput.value);
+            //currentResult=currentResult-parseInt(userInput.value);
+            break;
+        case '*':
+            userInput.value=userInput.value+'*';
+            //historial.push("*"+userInput.value);
+            //currentResult=currentResult*parseInt(userInput.value);
+            break;
+        case '/':
+            userInput.value=userInput.value+'/';
+            //historial.push("/"+userInput.value);
+            //currentResult=currentResult/parseInt(userInput.value);
+            break;
     }
-    else if (operador==='RESTA'){
-        operacion={
-            operando: userInput.value,
-            opera: "RESTA"
-        }
-        alert(operacion.opera+": "+operacion.operando)
-        historial.push("-"+userInput.value);
-        currentResult=currentResult-parseInt(userInput.value);
-    }
-    else if (operador==='MULTIPLICACIÓN'){
-        operacion={
-            operando: userInput.value,
-            opera: "MULTIPLICACIÓN"
-        }
-        alert(operacion.opera+": "+operacion.operando)
-        historial.push("*"+userInput.value);
-        currentResult=currentResult*parseInt(userInput.value);
-    }
-    else if (operador==='DIVISIÓN'){
-        operacion={
-            operando: userInput.value,
-            opera: "DIVISIÓN"
-        }
-        alert(operacion.opera+": "+operacion.operando)
-        historial.push("/"+userInput.value);
-        currentResult=currentResult/parseInt(userInput.value);
-    }
-    outputResult(currentResult,currentResult);
+    //outputResult(currentResult);
 }
-function sum(){
-    calcular('SUMA');
-}
-function sust(){
-    calcular('RESTA');
-}
-function multiply(){
-    calcular('MULTIPLICACIÓN');
-}
-function divide(){
-    calcular('DIVISIÓN');
-}
+
 function clear(){
     currentResult=0;
     userInput.value="";
     historial=[];
-    outputResult(currentResult,0);
+    outputResult(currentResult);
 }
 function hist(){
     alert(historial);
 }
-addBtn.addEventListener('click',sum);
-subtractBtn.addEventListener('click',sust);
-multiplyBtn.addEventListener('click',multiply);
-divideBtn.addEventListener('click',divide);
+addBtn.addEventListener('click',function(){calcular('+')});
+subtractBtn.addEventListener('click',function(){calcular('-')});
+multiplyBtn.addEventListener('click',function(){calcular('*')});
+divideBtn.addEventListener('click',function(){calcular('/')});
 clearBtn.addEventListener('click',clear);
 histBtn.addEventListener('click',hist)

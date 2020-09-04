@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: 'Lexend Peta', sans-serif;
+  font-family: 'Play', sans-serif;
 }
 
 body {
@@ -11,28 +11,53 @@ body {
 }
 
 header {
-  background: #000;
-  color: white;
+  background: url(../img/madera1.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: #000000;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   width: 100%;
+  font-size: x-large;
+  height: 90px;
 }
 
-header:hover {
-  background: #084f88;
-  border-color: #084f88;
+header h1{
+  margin:0rem;
+  padding: 0px;
 }
 
-#results,
+footer{
+  background: url(../img/madera1.jpg) top left repeat;
+  color: #000000;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  align-self: flex-end;
+}
+
 #calculator {
-  margin: 2rem auto;
-  width: 40rem;
-  max-width: 90%;
+  margin: 0rem auto;
+  max-width: 100%;
   border: 1px solid #024b86;
-  border-radius: 10px;
+  border-radius: 0px;
   padding: 1rem;
   color: #023d6d;
+  background: url(../img/math.jpg) no-repeat center center fixed;
+  background-size: cover;
+  border-color: #00000000;
+  height: calc(100vh-90px);
+}
+
+#results{
+  margin: 0rem auto;
+  max-width: 100%;
+  border: 1px solid #024029;
+  border-radius: 0px;
+  padding: 1rem;
+  color: #ffffff;
+  background: #024029;
 }
 
 #results {
@@ -42,12 +67,14 @@ header:hover {
 #calculator input {
   font: inherit;
   font-size: 3rem;
-  border: 2px solid #023d6d;
-  width: 10rem;
+  border: 0px solid #666666;
+  width: 25rem;
+  height: 5rem;
   padding: 0.15rem;
   margin: auto;
   display: block;
-  color: #023d6d;
+  color: #000000;
+  background: #ffffff;
   text-align: center;
 }
 
@@ -58,9 +85,9 @@ header:hover {
 #calculator button {
   font: inherit;
   font-size: large;
-  background: #000;
+  background: #025939;
   color: white;
-  border: 1px solid #023d6d;
+  border: 1px solid #025939;
   padding: 1rem;
   cursor: pointer;
   width: 60px;
@@ -71,9 +98,9 @@ header:hover {
 #results button {
   font: inherit;
   font-size: medium;
-  background: #000;
+  background: #025939;
   color: white;
-  border: 1px solid #023d6d;
+  border: 1px solid #025939;
   padding: 1rem;
   cursor: pointer;
   width: 60px;
@@ -91,14 +118,14 @@ header:hover {
 
 #calculator button:hover,
 #calculator button:active {
-  background: #084f88;
-  border-color: #084f88;
+  background: #000000;
+  border-color: #000000;
 }
 
 #results button:hover,
 #results button:active {
-  background: #084f88;
-  border-color: #084f88;
+  background: #000000;
+  border-color: #000000;
 }
 
 #calc-actions button {
@@ -113,3 +140,23 @@ header:hover {
   margin-top: 1rem;
   text-align: center;
 }
+
+a {
+  color:#000000;
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:visited {
+  color:#000000
+}
+
+a:active {
+  color:#000000
+}
+
+a:hover {
+  color:#000000
+}
+

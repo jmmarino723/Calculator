@@ -4,29 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Calculadora bootcamp</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <title>Basic Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/app.css" />
   </head>
   <body>
     <header>
-      <h1>Calculadora bootcamp</h1>
+      <h1>Basic Calculator</h1>
     </header>
     <section id="calculator">
-      <input type="number" id="input-number" />
+      <input type="text" id="input-number" disabled/>
       <div id="calc-actions">
+        <button type="button" name="btn-number" class="numbers">1</button>
+        <button type="button" name="btn-number" class="numbers">2</button>
+        <button type="button" name="btn-number" class="numbers">3</button>
         <button type="button" id="btn-add">+</button>
+      </div>
+      <div id="calc-actions">
+        <button type="button" name="btn-number" class="numbers">4</button>
+        <button type="button" name="btn-number" class="numbers">5</button>
+        <button type="button" name="btn-number" class="numbers">6</button>
         <button type="button" id="btn-subtract">-</button>
+      </div>
+      <div id="calc-actions">
+        <button type="button" name="btn-number" class="numbers">7</button>
+        <button type="button" name="btn-number" class="numbers">8</button>
+        <button type="button" name="btn-number" class="numbers">9</button>
         <button type="button" id="btn-multiply">*</button>
-        <button type="button" id="btn-divide">/</button>
+      </div>
+      <div id="calc-actions">
         <button type="button" id="btn-clear">C</button>
+        <button type="button" name="btn-number">0</button>
+        <button type="button" id="btn-equal">=</button>
+        <button type="button" id="btn-divide">/</button>
+      </div>
+      <div id="calc-actions">
+        <button type="button" id="btn-hist">H</button>
       </div>
     </section>
-    <section id="results">
-      <button type="button" id="btn-hist">H</button>
-      <h2 id="current-calculation">0</h2>
-      <h2>Result: <span id="current-result">0</span></h2>
-    </section>
+
+    <footer>By <a href="https://jmmarino723.github.io/CV-JuanManuelMarinOcampo/">Juan Manuel Marin</a></footer>
     <script src="assets/scripts/vendor.js"></script>
     <script src="assets/scripts/app.js"></script>
   </body>
