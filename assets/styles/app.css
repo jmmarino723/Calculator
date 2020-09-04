@@ -83,7 +83,7 @@ footer{
 #calculator button {
   font: inherit;
   font-size: large;
-  background: rgb(0, 0, 0) transparent;
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   border: 1px solid #ffffff;
   padding: 1rem;
@@ -140,21 +140,21 @@ footer{
 }
 
 a {
-  color:#000000;
+  color:#ffffff;
   outline: none;
   text-decoration: none;
   padding: 2px 1px 0;
 }
 
 a:visited {
-  color:#000000
+  color:#ffffff
 }
 
 a:active {
-  color:#000000
+  color:#ffffff
 }
 
 a:hover {
-  color:#000000
+  color:#ffffff
 }
 
