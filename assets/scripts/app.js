@@ -29,6 +29,13 @@ function calcular(operacion){
     //outputResult(currentResult);
 }
 
+function ejecutar(){
+    historial.push(userInput.value+'=');
+    userInput.value=eval(userInput.value);
+    historial.push(userInput.value);
+    hist();
+}
+
 function clear(){
     currentResult=0;
     userInput.value="";
@@ -43,4 +50,5 @@ subtractBtn.addEventListener('click',function(){calcular('-')});
 multiplyBtn.addEventListener('click',function(){calcular('*')});
 divideBtn.addEventListener('click',function(){calcular('/')});
 clearBtn.addEventListener('click',clear);
-histBtn.addEventListener('click',hist)
+histBtn.addEventListener('click',hist);
+equalBtn.addEventListener('click',ejecutar);
