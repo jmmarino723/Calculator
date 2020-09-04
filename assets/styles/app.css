@@ -9,6 +9,7 @@ html {
 body {
   margin: 0;
   background: linear-gradient(to bottom, #43b7b8, #436aac, #8229ad);
+  background-size: cover;
 }
 
 header {
