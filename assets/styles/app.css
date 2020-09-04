@@ -8,12 +8,12 @@ html {
 
 body {
   margin: 0;
+  background: linear-gradient(to bottom, #43b7b8, #436aac, #8229ad);
 }
 
 header {
-  background: url(../img/madera1.jpg) no-repeat center center fixed;
-  background-size: cover;
-  color: #000000;
+
+  color: #ffffff;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
@@ -28,8 +28,8 @@ header h1{
 }
 
 footer{
-  background: url(../img/madera1.jpg) top left repeat;
-  color: #000000;
+  background: #000000;
+  color: #ffffff;
   padding: 1rem;
   text-align: center;
   position: relative;
@@ -43,9 +43,7 @@ footer{
   border: 1px solid #024b86;
   border-radius: 0px;
   padding: 1rem;
-  color: #024029;
-  background: #024029;
-  background-size: cover;
+
   border-color: #00000000;
   height: calc(100vh-90px);
 }
@@ -85,9 +83,9 @@ footer{
 #calculator button {
   font: inherit;
   font-size: large;
-  background: #025939;
+  background: rgb(0, 0, 0) transparent;
   color: white;
-  border: 1px solid #025939;
+  border: 1px solid #ffffff;
   padding: 1rem;
   cursor: pointer;
   width: 60px;
