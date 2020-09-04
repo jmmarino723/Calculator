@@ -57,7 +57,7 @@ footer{
   padding: 1rem;
 
   border-color: #00000000;
-  height: calc(100vh-90px);
+  height: calc(1365px-90px);
 }
 
 #results{
