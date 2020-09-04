@@ -4,12 +4,13 @@
 
 html {
   font-family: 'Play', sans-serif;
+  background: linear-gradient(to bottom, #43b7b8, #436aac, #8229ad);
+  background-size: cover;
 }
 
 body {
   margin: 0;
-  background: linear-gradient(to bottom, #43b7b8, #436aac, #8229ad);
-  background-size: cover;
+
 }
 
 header {
