@@ -31,7 +31,7 @@ function calcular(operacion){
 
 function ejecutar(){
     historial.push(userInput.value+'=');
-    userInput.value=eval(userInput.value);
+    userInput.value=eval(String(userInput.value));
     historial.push(userInput.value);
     hist();
 }
