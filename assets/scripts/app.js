@@ -30,17 +30,17 @@ function calcular(operacion){
 }
 
 function ejecutar(){
-    historial.push(userInput.value+'=');
+    historial.push(userInput.value);
     userInput.value=eval(String(userInput.value));
     historial.push(userInput.value);
-    hist();
+
 }
 
 function clear(){
     currentResult=0;
     userInput.value="";
     historial=[];
-    outputResult(currentResult);
+
 }
 function hist(){
     alert(historial);
