@@ -39,8 +39,6 @@ function ejecutar(){
 function clear(){
     currentResult=0;
     userInput.value="";
-    historial=[];
-
 }
 function hist(){
     alert(historial);
