@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  padding-top: 90px;
+
 }
 
 header {
@@ -22,7 +22,6 @@ header {
   width: 100%;
   font-size: x-large;
   height: 90px;
-  position: fixed;
 }
 
 header h1{
@@ -60,7 +59,7 @@ footer{
   padding: 1rem;
 
   border-color: #00000000;
-  height: 1255px;
+  height: 1255px);
 }
 
 #results{
@@ -176,5 +175,6 @@ a:hover {
 #resultsText {
   background: #ffffff;
   color: #000000;
+  align-content: center;
   align-self: center;
 }
