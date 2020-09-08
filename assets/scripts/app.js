@@ -44,7 +44,7 @@ function hist(){
     alert(historial);
 }
 function visscroll(){
-    let visibleScrollbars = window.scrollbars.visible
+    let visibleScrollbars = window.scrollbars.visible;
 }
 addBtn.addEventListener('click',function(){calcular('+')});
 subtractBtn.addEventListener('click',function(){calcular('-')});
