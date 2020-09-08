@@ -173,6 +173,7 @@ a:hover {
 
 #resultsText {
   background: #ffffff00;
+  border-color: #00000000;
   color: #000000;
   align-content: center;
   align-self: center;
