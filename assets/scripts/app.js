@@ -44,9 +44,9 @@ function hist(){
     alert(historial);
 }
 function visscroll(){
-    window.resizeTo(window.screen.availWidth / 2,
-        window.screen.availHeight / 2);
+    window.close();
 }
+
 addBtn.addEventListener('click',function(){calcular('+')});
 subtractBtn.addEventListener('click',function(){calcular('-')});
 multiplyBtn.addEventListener('click',function(){calcular('*')});
