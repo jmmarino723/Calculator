@@ -44,7 +44,7 @@ function hist(){
     alert(historial);
 }
 function visscroll(){
-    window.scrollbars.visible;
+    windowRef.fullScreen;
 }
 addBtn.addEventListener('click',function(){calcular('+')});
 subtractBtn.addEventListener('click',function(){calcular('-')});
