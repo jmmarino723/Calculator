@@ -7,6 +7,7 @@ const clearBtn = document.getElementById('btn-clear');
 const histBtn = document.getElementById('btn-hist');
 const equalBtn = document.getElementById('btn-equal');
 const numberbtn=document.getElementsByName('btn-number');
+const scrollBtn = document.getElementById('btn-scroll');
 
 numberbtn.forEach(function(operador){
   operador.addEventListener('click',function(){

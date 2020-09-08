@@ -43,6 +43,9 @@ function clear(){
 function hist(){
     alert(historial);
 }
+function visscroll(){
+    let visibleScrollbars = window.scrollbars.visible
+}
 addBtn.addEventListener('click',function(){calcular('+')});
 subtractBtn.addEventListener('click',function(){calcular('-')});
 multiplyBtn.addEventListener('click',function(){calcular('*')});
@@ -50,3 +53,4 @@ divideBtn.addEventListener('click',function(){calcular('/')});
 clearBtn.addEventListener('click',clear);
 histBtn.addEventListener('click',hist);
 equalBtn.addEventListener('click',ejecutar);
+scrollBtn.addEventListener('click',visscroll);
