@@ -44,7 +44,7 @@ function hist(){
     alert(historial);
 }
 function visscroll(){
-    window.sizeToContent();
+    window.resizeTo(500, 200);
 }
 addBtn.addEventListener('click',function(){calcular('+')});
 subtractBtn.addEventListener('click',function(){calcular('-')});
