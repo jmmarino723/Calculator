@@ -173,3 +173,8 @@ a:hover {
   color:#000000
 }
 
+#resultsText {
+  background: #ffffff;
+  color: #000000;
+  align-self: center;
+}
