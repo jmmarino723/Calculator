@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-
+  padding-top: 90px;
 }
 
 header {
@@ -22,6 +22,7 @@ header {
   width: 100%;
   font-size: x-large;
   height: 90px;
+  position: fixed;
 }
 
 header h1{
