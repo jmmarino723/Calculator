@@ -65,11 +65,10 @@ footer{
 #results{
   margin: 0rem auto;
   max-width: 100%;
-  border: 1px solid #024029;
+  border: 1px solid #02402900;
   border-radius: 0px;
   padding: 1rem;
   color: #ffffff;
-  background: #024029;
 }
 
 #results {
