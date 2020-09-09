@@ -1,20 +1,25 @@
 const userInput = document.getElementById('input-number');
 // const addBtn = document.getElementById('btn-add');
-const addBtn = document.querySelector("div.calc-actions   button[id='btn-add']");
-const subtractBtn = document.getElementById('btn-subtract');
-const multiplyBtn = document.getElementById('btn-multiply');
-const divideBtn = document.getElementById('btn-divide');
-const clearBtn = document.getElementById('btn-clear');
-const histBtn = document.getElementById('btn-hist');
-const equalBtn = document.getElementById('btn-equal');
-const numberbtn=document.getElementsByName('btn-number');
-const scrollBtn = document.getElementById('btn-scroll');
-
-numberbtn.forEach(function(operador){
-  operador.addEventListener('click',function(){
-    digitar(operador.innerText);
+// const addBtn = document.querySelector("div.calc-actions button[id='btn-add']");
+// const subtractBtn = document.getElementById('btn-subtract');
+// const multiplyBtn = document.getElementById('btn-multiply');
+// const divideBtn = document.getElementById('btn-divide');
+// const clearBtn = document.getElementById('btn-clear');
+// const histBtn = document.getElementById('btn-hist');
+// const equalBtn = document.getElementById('btn-equal');
+// const numberbtn=document.getElementsByName('btn-number');
+// const scrollBtn = document.getElementById('btn-scroll');
+const buttons=document.querySelectorAll('button')
+for(const btn of buttons){
+  btn.addEventListener('click',function(){
+    digitar(btn.innerText);
   })
-})
+}
+// numberbtn.forEach(function(operador){
+//   operador.addEventListener('click',function(){
+//     digitar(operador.innerText);
+//   })
+// })
 
 function digitar(operador){
   switch (operador){
@@ -48,11 +53,32 @@ function digitar(operador){
     case '0':
       userInput.value+='0';
       break;
+    case '+':
+      userInput.value+='+';
+      break;
+    case '-':
+      userInput.value+='-';
+      break;
+    case '*':
+      userInput.value+='*';
+      break;
+    case '/':
+      userInput.value+='/';
+      break;
+    case '=':
+      ejecutar();
+      break;
+    case 'H':
+      hist();
+      break;
+    case 'C':
+      clear();
+      break;
   }
 }
 
-const currentResultOutput = document.getElementById('current-result');
+// const currentResultOutput = document.getElementById('current-result');
 
-function outputResult(result) {
-  userInput.value = result;
-}
+// function outputResult(result) {
+//   userInput.value = result;
+// }
