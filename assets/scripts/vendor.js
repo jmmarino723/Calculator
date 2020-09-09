@@ -15,11 +15,6 @@ for(const btn of buttons){
     digitar(btn.innerText);
   })
 }
-// numberbtn.forEach(function(operador){
-//   operador.addEventListener('click',function(){
-//     digitar(operador.innerText);
-//   })
-// })
 
 function digitar(operador){
   switch (operador){
@@ -76,9 +71,3 @@ function digitar(operador){
       break;
   }
 }
-
-// const currentResultOutput = document.getElementById('current-result');
-
-// function outputResult(result) {
-//   userInput.value = result;
-// }
