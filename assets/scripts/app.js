@@ -57,4 +57,4 @@ function visscroll(){
 // clearBtn.addEventListener('click',clear);
 // histBtn.addEventListener('click',hist);
 // equalBtn.addEventListener('click',ejecutar);
-// scrollBtn.addEventListener('click',visscroll);
+scrollBtn.addEventListener('click',visscroll);
