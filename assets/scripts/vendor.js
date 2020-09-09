@@ -8,7 +8,7 @@ const userInput = document.getElementById('input-number');
 // const histBtn = document.getElementById('btn-hist');
 // const equalBtn = document.getElementById('btn-equal');
 // const numberbtn=document.getElementsByName('btn-number');
-// const scrollBtn = document.getElementById('btn-scroll');
+const scrollBtn = document.getElementById('btn-scroll');
 const buttons=document.querySelectorAll('button')
 for(const btn of buttons){
   btn.addEventListener('click',function(){
