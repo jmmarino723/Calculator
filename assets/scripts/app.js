@@ -21,7 +21,7 @@ function hist(){
 }
 function cientifica(){
     //window.close();
-    let textCient = ['%','^','pi','(',')','log','ln','sqr'];
+    let textCient = ['%','^','pi','(','sqr','log','ln',')'];
     
     let contenedor='calc-actions';
     for (let i=0; i<textCient.length; i++){
@@ -37,6 +37,9 @@ function cientifica(){
         const par1 = document.getElementById(contenedor);
         boton.innerText=textCient[i];
         par1.appendChild(boton);
+        boton.addEventListener('click',function(){
+            digitar(boton.innerText);
+        })
         contenedor='calc-actions';
     }
     

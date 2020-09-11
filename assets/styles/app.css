@@ -4,13 +4,13 @@
 
 html {
   font-family: 'Bebas Neue', cursive;
-  background: linear-gradient(to bottom, #f4bd56, #f27406, #5a280d);
-  background-size: cover;
+
 }
 
 body {
   margin: 0;
-
+  background: linear-gradient(to bottom, #f4bd56, #f27406, #5a280d);
+  background-size: cover;
 }
 
 header {
@@ -39,7 +39,7 @@ footer{
   background-image: url(http://i26.servimg.com/u/f26/12/56/56/12/12210.png);
   background-repeat: repeat-x;
   background-position: center left;
-  border: 1px solid #80c9ff;
+  border: 1px solid #b9b9b9;
   border-bottom: 0px;
   -moz-border-radius: 8px 8px 0px 0px;
   -webkit-border-top-left-radius: 8px;
@@ -57,9 +57,9 @@ footer{
   border: 1px solid #024b86;
   border-radius: 0px;
   padding: 1rem;
-
+  align-content: center;
   border-color: #00000000;
-  height: 1255px;
+  height: 100vh;
 }
 
 #results{
@@ -104,6 +104,7 @@ footer{
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  text-align: center;
 }
 
 #results button {
@@ -139,15 +140,41 @@ footer{
   border-color: #000000;
 }
 
-#calc-actions button {
+#calc-actions1 button {
   width: 4rem;
+  text-align: center;
+}
+
+#calc-actions2 button {
+  width: 4rem;
+  text-align: center;
+}
+
+#calc-actions3 button {
+  width: 4rem;
+  text-align: center;
+}
+
+#calc-actions4 button {
+  width: 4rem;
+  text-align: center;
+}
+
+#calc-actions5 button {
+  width: 4rem;
+  text-align: center;
 }
 
 #results button{
   width: 4rem;
 }
 
-#calc-actions {
+#calc-actions1,
+#calc-actions2,
+#calc-actions3,
+#calc-actions4,
+#calc-actions5
+ {
   margin-top: 1rem;
   text-align: center;
 }
