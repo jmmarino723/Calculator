@@ -75,17 +75,30 @@ footer{
   text-align: center;
 }
 
-#calculator input {
+#input-number  {
   font: inherit;
   font-size: 3rem;
   border: 0px solid #666666;
-  width: 300px;
+  width: 400px;
   height: 5rem;
   padding: 0.15rem;
   margin: auto;
   display: block;
   color: #000000;
   background: #ffffff;
+  text-align: center;
+}
+#input-history {
+  font: inherit;
+  font-size: 1rem;
+  border: 0px solid #666666;
+  width: 400px;
+  height: 2rem;
+  padding: 0rem;
+  margin: auto;
+  display: block;
+  color: #000000;
+  background: #e0e0e0;
   text-align: center;
 }
 

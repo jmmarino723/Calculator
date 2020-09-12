@@ -3,6 +3,7 @@ let currentResult=defaultResult;
 let historial=[];
 let operacion={};
 let result='';
+let cient=false;
 
 function ejecutar(){
     result=userInput.value+'=';
@@ -20,31 +21,30 @@ function hist(){
     alert(historial);
 }
 function cientifica(){
-    //window.close();
     let textCient = ['%','^','pi','(','sqr','log','ln',')'];
-    
     let contenedor='calc-actions';
-    for (let i=0; i<textCient.length; i++){
-        let boton = document.createElement('button');
-        let aux=i+1;
-        if (i<=3){
-            contenedor=contenedor+aux;
+    if (cient===false){
+        for (let i=0; i<textCient.length; i++){
+            let boton = document.createElement('button');
+            let aux=i+1;
+            if (i<=3){
+                contenedor=contenedor+aux;
+            }
+            else if (i>3){
+                aux-=4;
+                contenedor=contenedor+aux;
+            }
+            const par1 = document.getElementById(contenedor);
+            boton.innerText=textCient[i];
+            par1.appendChild(boton);
+            boton.addEventListener('click',function(){
+                digitar(boton.innerText);
+            })
+            contenedor='calc-actions';
         }
-        else if (i>3){
-            aux-=4;
-            contenedor=contenedor+aux;
-        }
-        const par1 = document.getElementById(contenedor);
-        boton.innerText=textCient[i];
-        par1.appendChild(boton);
-        boton.addEventListener('click',function(){
-            digitar(boton.innerText);
-        })
-        contenedor='calc-actions';
+        cient=true;
     }
     
-    
-    //par1.appendChild();
 }
 
 scrollBtn.addEventListener('click',cientifica);
