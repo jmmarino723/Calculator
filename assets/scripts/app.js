@@ -23,10 +23,18 @@ function clear(){
     userInput.value="";
 }
 function hist(){
-    alert(historial);
+    result=historyInput.value+'=';
+    result+=userInput.value;
+    historial.push(result);
+    let newHistory=document.createElement("LI");
+    const totalHistory=document.getElementById("groupHistory");
+    newHistory.className="list-group-item";
+    newHistory.innerText=result;
+    totalHistory.append(newHistory);
+    // alert(historial);
 }
 function cientifica(){
-    let textCient = ['sin','cos','tan','(','sqr','log','ln',')'];
+    let textCient = ['sin','cos','tan','(','sqr','log','ln',')','^2','10^x','1/x','|x|'];
     let contenedor='calc-actions';
     let contenedor2='btn';
     if (cient===false){
@@ -39,8 +47,12 @@ function cientifica(){
             if (i<=3){
                 contenedor=contenedor+aux;
             }
-            else if (i>3){
+            else if (i>3 && i<=7){
                 aux-=4;
+                contenedor=contenedor+aux;
+            }
+            else if (i>7){
+                aux-=8;
                 contenedor=contenedor+aux;
             }
             const par1 = document.getElementById(contenedor);
@@ -58,7 +70,7 @@ function cientifica(){
 }
 
 function standar(){
-    let textCient = ['sin','cos','tan','(','sqr','log','ln',')'];
+    let textCient = ['sin','cos','tan','(','sqr','log','ln',')','^2','10^x','1/x','|x|'];
     let contenedor2='btn';
     if (cient===true){
         for (let i=0; i<textCient.length; i++){

@@ -6,10 +6,7 @@ const collapse=document.getElementById('');
 const standBtn = document.getElementById('btn-stand');
 
 
-let percent=0;
-let ln=0;
-let logar=0;
-let expo=0;
+let total=0;
 
 for(const btn of buttons){
   btn.addEventListener('click',function(){
@@ -75,13 +72,29 @@ function digitar(operador){
       historyInput.value+='/';
       userInput.value='';
       break;
-    case '%':
-        percent=eval(userInput.value/100);
-        historyInput.value+='%';
-        userInput.value+='%';
-        break;
-    case '^':
-      userInput.value+='^';
+    case 'sin':
+      total=Math.sin(eval(eval(historyInput.value)+'/180')*Math.PI);
+      historyInput.value='SIN('+historyInput.value+')';
+      userInput.value=total;
+      hist();
+      break;
+    case 'cos':
+      total=Math.cos(eval(eval(historyInput.value)+'/180')*Math.PI);
+      historyInput.value='COS('+historyInput.value+')';
+      userInput.value=total;
+      hist();
+      break;
+    case '^2':
+      total=eval(historyInput.value)*eval(historyInput.value);
+      historyInput.value='('+historyInput.value+')^2';
+      userInput.value=total;
+      hist();
+      break;
+    case '10^x':
+      total=Math.pow(10,eval(historyInput.value));
+      historyInput.value='10^('+historyInput.value+')';
+      userInput.value=total;
+      hist();
       break;
     case '(':
       historyInput.value+='(';
@@ -92,25 +105,44 @@ function digitar(operador){
       userInput.value+=')';
       break;
     case 'ln':
-      const ln=Math.log(eval(userInput.value));
-      userInput.value='LN('+userInput.value+')';
+      total=Math.log(eval(historyInput.value));
+      historyInput.value='LN('+historyInput.value+')';
+      userInput.value=total;
+      hist();
       break;
     case 'log':
-      userInput.value='LOG('+userInput.value+')';
+      total=Math.log10(eval(historyInput.value));
+      historyInput.value='LOG('+historyInput.value+')';
+      userInput.value=total;
+      hist();
       break;
     case 'sqr':
-      userInput.value='SQRT('+userInput.value+')';
+      total=Math.sqrt(eval(historyInput.value));
+      historyInput.value='SQRT('+historyInput.value+')';
+      userInput.value=total;
+      hist();
       break;
-    case 'pi':
-      historyInput.value+='3.1416';
-      userInput.value+='3.1416';
+    case 'tan':
+      total=Math.tan(eval(eval(historyInput.value)+'/180')*Math.PI);
+      historyInput.value='TAN('+historyInput.value+')';
+      userInput.value=total;
+      hist();
+      break;
+    case '1/x':
+      total=1/eval(historyInput.value);
+      historyInput.value='1/('+historyInput.value+')';
+      userInput.value=total;
+      hist();
+      break;
+    case '|x|':
+      total=Math.abs(eval(historyInput.value));
+      historyInput.value='|'+historyInput.value+'|';
+      userInput.value=total;
+      hist();
       break;
     case '=':
       ejecutar();
       break;
-    // case 'H':
-    //   hist();
-    //   break;
     case 'C':
       clear();
       break;
