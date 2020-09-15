@@ -1,7 +1,10 @@
 const userInput = document.getElementById('input-number');
 const historyInput = document.getElementById('input-history');
 const scrollBtn = document.getElementById('btn-scroll');
-const buttons=document.querySelectorAll('button')
+const buttons=document.querySelectorAll('button');
+const collapse=document.getElementById('');
+const standBtn = document.getElementById('btn-stand');
+
 
 let percent=0;
 let ln=0;
@@ -74,18 +77,22 @@ function digitar(operador){
       break;
     case '%':
         percent=eval(userInput.value/100);
+        historyInput.value+='%';
         userInput.value+='%';
         break;
     case '^':
       userInput.value+='^';
       break;
     case '(':
+      historyInput.value+='(';
       userInput.value+='(';
       break;
     case ')':
+      historyInput.value+=')';
       userInput.value+=')';
       break;
     case 'ln':
+      const ln=Math.log(eval(userInput.value));
       userInput.value='LN('+userInput.value+')';
       break;
     case 'log':
@@ -95,14 +102,15 @@ function digitar(operador){
       userInput.value='SQRT('+userInput.value+')';
       break;
     case 'pi':
+      historyInput.value+='3.1416';
       userInput.value+='3.1416';
       break;
     case '=':
       ejecutar();
       break;
-    case 'H':
-      hist();
-      break;
+    // case 'H':
+    //   hist();
+    //   break;
     case 'C':
       clear();
       break;

@@ -3,13 +3,14 @@
 }
 
 html {
-  font-family: 'Bebas Neue', cursive;
+  
 
 }
 
 body {
+  font-family: 'Bebas Neue', cursive;
   margin: 0;
-  background: linear-gradient(to bottom, #f4bd56, #f27406, #5a280d);
+  background: linear-gradient(to bottom,#080E33,#111E6C,#192DA1);
   background-size: cover;
 }
 
@@ -53,7 +54,7 @@ footer{
 
 #calculator {
   margin: 0rem auto;
-  max-width: 100%;
+  max-width: 60%;
   border: 1px solid #024b86;
   border-radius: 0px;
   padding: 1rem;
@@ -79,8 +80,8 @@ footer{
   font: inherit;
   font-size: 3rem;
   border: 0px solid #666666;
-  width: 400px;
-  height: 5rem;
+  width: 300px;
+  height: 4rem;
   padding: 0.15rem;
   margin: auto;
   display: block;
@@ -93,7 +94,7 @@ footer{
   font-size: 1rem;
   border: 0px solid #666666;
   width: 400px;
-  height: 2rem;
+  height: 3rem;
   padding: 0rem;
   margin: auto;
   display: block;
@@ -109,13 +110,14 @@ footer{
 #calculator button {
   font: inherit;
   font-size: large;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: 1px solid #ffffff;
+  border-color: #ffffff;
+  /* background: rgba(0, 0, 0, 0.6); */
+  /* color: white; */
+  /* border: 1px solid #ffffff; */
   padding: 1rem;
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
+  /* cursor: pointer; */
+  /* width: 60px; */
+  /* height: 60px; */
   border-radius: 50%;
   text-align: center;
 }
@@ -145,12 +147,14 @@ footer{
 #calculator button:active {
   background: #000000;
   border-color: #000000;
+  color: #ffffff;
 }
 
 #results button:hover,
 #results button:active {
   background: #000000;
   border-color: #000000;
+  color: #ffffff;
 }
 
 #calc-actions1 button {
